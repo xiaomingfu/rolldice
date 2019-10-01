@@ -3,9 +3,9 @@ import './Die.css'
 
 class Die extends Component{
     render(){
-        let fasUrl = `fas fa-9x fa-dice-${this.props.rando}`;
+        let fasUrl = `Die fas fa-dice-${this.props.rando}`;
         return(
-            <div className="Die">
+            <div>
                 <i className = {fasUrl}></i>
             </div>
         )

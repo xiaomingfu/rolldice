@@ -4,31 +4,26 @@ import './RollDice.css'
 
 class RollDice extends Component {
     static defaultProps = {
-        diceNum: [
-            { num: 'one' },
-            { num: 'two' },
-            { num: 'three' },
-            { num: 'four' },
-            { num: 'five' },
-            { num: 'six' },
-        ]
+        sides: ["one", "two", "three", "four", "five", "six"]
     }
     constructor(props) {
         super(props);
-        this.state = { randNum: 'one' };
+        this.state = { die1: 'one', die2: 'one' };
         this.roll = this.roll.bind(this);
     }
     roll(e) {
-        let randNum = this.props.diceNum[Math.floor(Math.random() * 6)].num;
-        this.setState({randNum :randNum});
+        const newDie1 = this.props.sides[
+            Math.floor(Math.random() * this.props.sides.length )];
+        const newDie2 = this.props.sides[
+            Math.floor(Math.random() * this.props.sides.length )];
+        this.setState({die1 :newDie1, die2: newDie2});
     }
     render() {
-        
         return (
             <div className="RollDice">
                 <div className="RollDice-die">
-                    <Die rando={this.state.randNum} />
-                    <Die rando={this.state.randNum} />
+                    <Die rando={this.state.die1} />
+                    <Die rando={this.state.die2} />
                 </div>
                 <button className="btn btn-default btn-lg" onClick={this.roll}>Roll Dice!</button>
             </div>

@@ -1,0 +1,14 @@
+.RollDice {
+    text-align: center;
+    color: rgb(138, 114, 182);
+
+}
+
+.RollDice-die {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+button {
+    margin: 50px auto;
+}

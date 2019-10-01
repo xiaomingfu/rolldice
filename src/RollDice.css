@@ -1,6 +1,5 @@
 .RollDice {
     text-align: center;
-    color: rgb(138, 114, 182);
     display: flex;
     flex-flow: column nowrap;
     min-height: 100vh;

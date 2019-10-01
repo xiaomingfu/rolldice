@@ -5,5 +5,5 @@
  - two dice side state
  - rolling method
  - animate props
-![Roll Dice](https://github.com/xiaomingfu/rolldice/blob/master/RollDice.png)
+![Roll Dice](https://github.com/xiaomingfu/rolldice/blob/master/roll-dice.gif)
 
